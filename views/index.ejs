@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>8 quuen || chess board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>  
+  <div class='container'>
+    <div class='game'>
+      <table>        
+        <tr>          
+          <td class='square white <% if(queen){ %> <%= queen.x0y0 %> <% } %>' x='0' y='0'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x0y1 %> <% } %>' x='0' y='1'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x0y2 %> <% } %>' x='0' y='2'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x0y3 %> <% } %>' x='0' y='3'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x0y4 %> <% } %>' x='0' y='4'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x0y5 %> <% } %>' x='0' y='5'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x0y6 %> <% } %>' x='0' y='6'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x0y7 %> <% } %>' x='0' y='7'></td>          
+        </tr>
+        <tr>          
+          <td class='square black <% if(queen){ %> <%= queen.x1y0 %> <% } %>' x='1' y='0'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x1y1 %> <% } %>' x='1' y='1'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x1y2 %> <% } %>' x='1' y='2'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x1y3 %> <% } %>' x='1' y='3'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x1y4 %> <% } %>' x='1' y='4'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x1y5 %> <% } %>' x='1' y='5'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x1y6 %> <% } %>' x='1' y='6'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x1y7 %> <% } %>' x='1' y='7'></td>          
+        </tr>
+        <tr>          
+          <td class='square white <% if(queen){ %> <%= queen.x2y0 %> <% } %>' x='2' y='0'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x2y1 %> <% } %>' x='2' y='1'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x2y2 %> <% } %>' x='2' y='2'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x2y3 %> <% } %>' x='2' y='3'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x2y4 %> <% } %>' x='2' y='4'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x2y5 %> <% } %>' x='2' y='5'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x2y6 %> <% } %>' x='2' y='6'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x2y7 %> <% } %>' x='2' y='7'></td>          
+        </tr>
+        <tr>          
+          <td class='square black <% if(queen){ %> <%= queen.x3y0 %> <% } %>' x='3' y='0'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x3y1 %> <% } %>' x='3' y='1'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x3y2 %> <% } %>' x='3' y='2'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x3y3 %> <% } %>' x='3' y='3'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x3y4 %> <% } %>' x='3' y='4'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x3y5 %> <% } %>' x='3' y='5'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x3y6 %> <% } %>' x='3' y='6'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x3y7 %> <% } %>' x='3' y='7'></td>          
+        </tr>
+        <tr>          
+          <td class='square white <% if(queen){ %> <%= queen.x4y0 %> <% } %>' x='4' y='0'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x4y1 %> <% } %>' x='4' y='1'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x4y2 %> <% } %>' x='4' y='2'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x4y3 %> <% } %>' x='4' y='3'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x4y4 %> <% } %>' x='4' y='4'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x4y5 %> <% } %>' x='4' y='5'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x4y6 %> <% } %>' x='4' y='6'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x4y7 %> <% } %>' x='4' y='7'></td>          
+        </tr>
+        <tr>          
+          <td class='square black <% if(queen){ %> <%= queen.x5y0 %> <% } %>' x='5' y='0'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x5y1 %> <% } %>' x='5' y='1'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x5y2 %> <% } %>' x='5' y='2'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x5y3 %> <% } %>' x='5' y='3'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x5y4 %> <% } %>' x='5' y='4'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x5y5 %> <% } %>' x='5' y='5'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x5y6 %> <% } %>' x='5' y='6'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x5y7 %> <% } %>' x='5' y='7'></td>          
+        </tr>
+        <tr>          
+          <td class='square white <% if(queen){ %> <%= queen.x6y0 %> <% } %>' x='6' y='0'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x6y1 %> <% } %>' x='6' y='1'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x6y2 %> <% } %>' x='6' y='2'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x6y3 %> <% } %>' x='6' y='3'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x6y4 %> <% } %>' x='6' y='4'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x6y5 %> <% } %>' x='6' y='5'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x6y6 %> <% } %>' x='6' y='6'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x6y7 %> <% } %>' x='6' y='7'></td>          
+        </tr>
+        <tr>         
+          <td class='square black <% if(queen){ %> <%= queen.x7y0 %> <% } %>' x='7' y='0'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x7y1 %> <% } %>' x='7' y='1'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x7y2 %> <% } %>' x='7' y='2'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x7y3 %> <% } %>' x='7' y='3'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x7y4 %> <% } %>' x='7' y='4'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x7y5 %> <% } %>' x='7' y='5'></td>
+          <td class='square black <% if(queen){ %> <%= queen.x7y6 %> <% } %>' x='7' y='6'></td>
+          <td class='square white <% if(queen){ %> <%= queen.x7y7 %> <% } %>' x='7' y='7'></td>          
+        </tr>        
+      </table>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>
